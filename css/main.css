@@ -1,0 +1,42 @@
+  gap: 10px;
+}
+.form-checkboxes-row {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 8px;
+}
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.btn-secondary {
+  padding: 10px 20px;
+  border-radius: var(--radius-md);
+  background: var(--bg-app);
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  font-weight: 600;
+}
+.btn-primary-action {
+  padding: 10px 24px;
+  border-radius: var(--radius-md);
+  background: var(--brand-primary);
+  color: #ffffff;
+  font-weight: 700;
+}
+/* Responsive Breakpoints */
+@media (max-width: 768px) {
+  .navbar-container { flex-direction: column; align-items: flex-start; }
+  .role-switcher-container { width: 100%; justify-content: center; }
+  .notices-grid { grid-template-columns: 1fr; }
+  .form-grid-2 { grid-template-columns: 1fr; }
+  .span-2 { grid-column: span 1; }
+  .admin-header-card { flex-direction: column; align-items: flex-start; gap: 16px; }
+  .table-toolbar { flex-direction: column; align-items: flex-start; }
+  .admin-search-box input { width: 100%; }
+}
